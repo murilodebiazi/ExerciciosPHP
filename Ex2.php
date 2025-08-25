@@ -1,23 +1,19 @@
 <?php
     $nome = $_POST['nome'];
-    $mercadoria = $_POST['mercadoria'];
-    $preco = $_POST['preco'];
-    $quantidade = $_POST['quantidade'];
-    $valor = $preco * $quantidade;
+    $media = $_POST['media'];
 
-    echo "<h1>";
-    echo "Compra";
-    echo "</h1>";
-
-    echo "<p>";
-    echo $nome;
-    echo "</p>";
-
-    echo "<p>";
-    echo $mercadoria;
-    echo "</p>";
-
-    echo "<p>";
-    echo "R$ " .$valor;
-    echo "</p>";
+    if($media >= 7.0)
+    {
+        echo "<p>";
+        echo $nome;
+        echo " foi aprovado";
+        echo "</p>";
+    }
+    else
+    {
+        echo "<p>";
+        echo $nome;
+        echo " ficou de recuperação";
+        echo "</p>";
+    }
 ?>
