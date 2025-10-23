@@ -1,0 +1,14 @@
+CREATE DATABASE produtos DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+USE produtos;
+
+CREATE TABLE cadastro (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS usuarios
+(
+nome varchar(10),
+senha varchar(8) 
+);
